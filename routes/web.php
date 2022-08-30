@@ -35,3 +35,5 @@ Route::get('/Produto', function () {
 Route::get('/Categoria', function () {
     return view('categoria'); //nome da view
 });
+
+Route::get('/CategoriaController', 'ControllerModel@index');
