@@ -36,4 +36,4 @@ Route::get('/Categoria', function () {
     return view('categoria'); //nome da view
 });
 
-Route::get('/CategoriaController', 'ControllerModel@index');
+Route::get('/Controller', 'ControllerModel@index');
