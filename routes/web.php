@@ -37,3 +37,6 @@ Route::get('/categoria', function () {
 });
 
 Route::get('/categoria', 'CategoriaController@index');
+
+Route::post('/categoria/inserir','CategoriaController@store');
+

@@ -39,7 +39,12 @@ class CategoriaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $categoria = new categoriaModel();
+        $categoria -> categoria = $request->categoria;
+
+        $categoria->save();
+        return redirect("/categoria");
+
     }
 
     /**
