@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\PedidoModel;
 class PedidoController extends Controller
 {
     /**
@@ -14,7 +14,8 @@ class PedidoController extends Controller
      */
     public function index()
     {
-        //
+        $pedido = PedidoModel::all();
+        return view('pedido',compact('pedido'));
     }
 
     /**
@@ -35,7 +36,13 @@ class PedidoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $pedido = new PedidoModel();
+        $pedido -> idpedido = $request->idpedido;
+        $pedido -> data = $request->datapedi;
+        $pedido -> rastrear = $request->rastrearpedi;
+
+        $pedido->save();
+        return redirect("/pedido");
     }
 
     /**

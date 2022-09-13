@@ -36,8 +36,8 @@
 <a class="nav-item nav-link" id="categoria-menu" href="/categoria">Categoria</a>
 <a class="nav-item nav-link" id="cliente-menu" href="/Cliente">Cliente</a>
 <a class="nav-item nav-link" id="contato-menu" href="/Contato">Contato</a>
-<a class="nav-item nav-link" id="pedido-menu" href="/Pedido">Pedido</a>
-<a class="nav-item nav-link" id="produto-menu" href="/Produto">Produto</a>
+<a class="nav-item nav-link" id="pedido-menu" href="/pedido">Pedido</a>
+<a class="nav-item nav-link" id="produto-menu" href="/produto">Produto</a>
 </div>
 </div>
  

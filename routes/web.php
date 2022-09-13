@@ -28,7 +28,7 @@ Route::get('/Cliente', function () {
     return view('cliente'); //nome da view
 });
 
-Route::get('/Produto', function () {
+Route::get('/produto', function () {
     return view('produto'); //nome da view
 });
 
@@ -37,7 +37,10 @@ Route::get('/categoria', function () {
 });
 
 Route::get('/categoria', 'CategoriaController@index');
+Route::get('/pedido', 'PedidoController@index');
+Route::get('/produto', 'ProdutoController@index');
 
 Route::post('/categoria/inserir','CategoriaController@store');
 Route::post('/pedido/inserir','PedidoController@store');
+Route::post('/produto/inserir','ProdutoController@store');
 

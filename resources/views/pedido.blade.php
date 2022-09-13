@@ -9,6 +9,9 @@
             <div>
                 <input type="text" name="pedido" placeholder="Seu item" value="" />
             </div>
+            <div>
+               <p> Data de entrega </p><input type="date" name="datapedi" placeholder="Data de entrega" value="" />
+            </div>
             <div>
                 <input type="submit" value="Salvar" />
             </div>
@@ -20,18 +23,20 @@
             <table border="1" class = "tabela" cellspacing="3">
             <tbody>
                 <?php
-                echo "<th> ID </th>";
-                echo "<th> Categoria </th>";
+                echo "<th> ID pedido </th>";
+                echo "<th> Data </th>";
+                echo "<th> Cod Rastrear </th>";
                 echo "&nbsp";
                 echo "&nbsp";
                 ?>
-            @foreach($categoria as $c)
+            @foreach($pedido as $p)
             <?php
                 
                 
                 echo "<tr>";
-                    echo "<td> {$c->idcategoria}  </td>";
-                    echo "<td> {$c->categoria}  </td>";
+                    echo "<td> {$p->idpedido}  </td>";
+                    echo "<td> {$p->data}  </td>";
+                    echo "<td> {$p->rastrearpedi}  </td>";
                     echo "<td> <a> Excluir </a> </td>";
                     echo "<td> <a> Alterar </a> </td>";
 
