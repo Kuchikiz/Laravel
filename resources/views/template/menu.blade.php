@@ -17,7 +17,7 @@
 
 </head>
 <body>
-  
+@yield ('content')
 <header>
   <div class ="container" id="nav-container">
     <nav class ="navbar navbar-expand-lg fixed-top">
@@ -33,7 +33,7 @@
   <div class="navbar-nav">
 
 <a class="nav-item nav-link" id="index-menu" href="/">Home</a>
-<a class="nav-item nav-link" id="categoria-menu" href="/Categoria">Categoria</a>
+<a class="nav-item nav-link" id="categoria-menu" href="/categoria">Categoria</a>
 <a class="nav-item nav-link" id="cliente-menu" href="/Cliente">Cliente</a>
 <a class="nav-item nav-link" id="contato-menu" href="/Contato">Contato</a>
 <a class="nav-item nav-link" id="pedido-menu" href="/Pedido">Pedido</a>
@@ -64,6 +64,7 @@
 <!-- Paralax -->
 <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 <script src="js/scripts.js"> </script>
+
 
 </body>
 <footer class="bg-light text-center text-lg-start site-foote fixed-bottom">
@@ -99,5 +100,3 @@
   <!-- Copyright -->
 </footer>
 </html>
-
-@yield ('content')

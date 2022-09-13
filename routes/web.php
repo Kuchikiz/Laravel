@@ -32,8 +32,8 @@ Route::get('/Produto', function () {
     return view('produto'); //nome da view
 });
 
-Route::get('/Categoria', function () {
+Route::get('/categoria', function () {
     return view('categoria'); //nome da view
 });
 
-Route::get('/Controller', 'ControllerModel@index');
+Route::get('/categoria', 'CategoriaController@index');
