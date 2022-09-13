@@ -1,36 +1,37 @@
 @extends('template.menu')
 @section ('content')
 
+
+
 <body>
-<section> 
-        <form action="{{url('/produto/inserir')}}" method="post">
-            {{csrf_field()}}
-            <br><br>
-            <div>
-                <input type="text" name="produto" placeholder="Produto a ser cadastrado" value="" />
-            </div>
-            <div>
-                <input type="text" name="valor" placeholder="Valor do produto" value="" />
-            </div>
-            
-            <div>
-                <input type="submit" value="Salvar" />
-            </div>
-        </form>    
+
+  <section> 
+    <center> 
+<form action="{{url('/produto/inserir')}}" method="post">
+{{csrf_field()}}
+  <div class="form-group col-5">
+    <label for="exampleInputProduto"></label>
+    <input type="text" class="form-control" name="produto" value="" id="exampleInputProduto"  placeholder="Nome do Produto"> <br>
+     <input type="text" class="form-control" name="valor" value="" id="exampleInputProduto"  placeholder="Valor do Produto">
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
     </section>
-        <?php
-           
-			?>		
-            <table border="1" class = "tabela" cellspacing="3">
-            <tbody>
-                <?php
-                echo "<th> ID produto </th>";
-                echo "<th> Nome </th>";
-                echo "<th> Valor </th>";
-                echo "&nbsp";
-                echo "&nbsp";
-                ?>
-            @foreach($produto as $p)
+</center>
+
+<div class="table-responsive">
+    <center>
+<table class="table table-hover w-25 p-3">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">ID Produto</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+  @foreach($produto as $p)
             <?php
                 
                 
@@ -38,16 +39,17 @@
                     echo "<td> {$p->idproduto}  </td>";
                     echo "<td> {$p->produto}  </td>";
                     echo "<td> {$p->valor}  </td>";
-                    echo "<td> <a> Excluir </a> </td>";
-                    echo "<td> <a> Alterar </a> </td>";
+                  
 
                 echo "</tr>";
                 
 			?>
                 
             @endforeach
-                    </tbody>
-                    </table>
+  </tbody>
+</table>
+</center>
+</div>
     </section>
 
 </body>

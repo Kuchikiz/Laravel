@@ -16,11 +16,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 
 </head>
-<body>
-@yield ('content')
+
+
 <header>
   <div class ="container" id="nav-container">
-    <nav class ="navbar navbar-expand-lg fixed-top">
+    <nav class ="navbar navbar-expand-lg">
       <a href ="#" class ="navbar-brand">
       <img id="logo" src="img/iconelogo.png" alt="Adega Logo"> Adega Irmãos Aliados
 </a>
@@ -65,8 +65,8 @@
 <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 <script src="js/scripts.js"> </script>
 
+@yield ('content')
 
-</body>
 <footer class="bg-light text-center text-lg-start site-foote fixed-bottom">
   <!-- Grid container -->
   <div class="container p-4">
@@ -95,7 +95,7 @@
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2022 Copyright: Adega Irmãos Aliados
-    
+   
   </div>
   <!-- Copyright -->
 </footer>
