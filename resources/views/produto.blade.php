@@ -28,6 +28,8 @@
       <th scope="col">ID Produto</th>
       <th scope="col">Nome</th>
       <th scope="col">Valor</th>
+      <th scope="col"> &nbsp<th>
+      <th scope="col"> &nbsp<th>
     </tr>
   </thead>
   <tbody>
@@ -39,7 +41,8 @@
                     echo "<td> {$p->idproduto}  </td>";
                     echo "<td> {$p->produto}  </td>";
                     echo "<td> {$p->valor}  </td>";
-                  
+                    echo "<td> <a> Excluir </a> </td>";
+                    echo "<td> <a> Alterar </a> </td>";
 
                 echo "</tr>";
                 

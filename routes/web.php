@@ -24,7 +24,7 @@ Route::get('/pedido', function () {
     return view('pedido'); //nome da view
 });
 
-Route::get('/Cliente', function () {
+Route::get('/cliente', function () {
     return view('cliente'); //nome da view
 });
 
@@ -39,8 +39,11 @@ Route::get('/categoria', function () {
 Route::get('/categoria', 'CategoriaController@index');
 Route::get('/pedido', 'PedidoController@index');
 Route::get('/produto', 'ProdutoController@index');
+Route::get('/cliente', 'ClienteController@index');
+
 
 Route::post('/categoria/inserir','CategoriaController@store');
 Route::post('/pedido/inserir','PedidoController@store');
 Route::post('/produto/inserir','ProdutoController@store');
+Route::post('/cliente/inserir','ClienteController@store');
 

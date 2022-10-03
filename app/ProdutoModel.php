@@ -8,6 +8,6 @@ class ProdutoModel extends Model
 {
     protected $table = "tbproduto";
     protected $fillable = 
-    ['null', 'null', 'produto', 'valor'];
+    ['null', 'produto', 'valor'];
     public $timestamps = false;
 }

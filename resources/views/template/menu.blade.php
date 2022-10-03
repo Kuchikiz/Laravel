@@ -34,7 +34,7 @@
 
 <a class="nav-item nav-link" id="index-menu" href="/">Home</a>
 <a class="nav-item nav-link" id="categoria-menu" href="/categoria">Categoria</a>
-<a class="nav-item nav-link" id="cliente-menu" href="/Cliente">Cliente</a>
+<a class="nav-item nav-link" id="cliente-menu" href="/cliente">Cliente</a>
 <a class="nav-item nav-link" id="contato-menu" href="/Contato">Contato</a>
 <a class="nav-item nav-link" id="pedido-menu" href="/pedido">Pedido</a>
 <a class="nav-item nav-link" id="produto-menu" href="/produto">Produto</a>
@@ -67,7 +67,7 @@
 
 @yield ('content')
 
-<footer class="bg-light text-center text-lg-start site-foote fixed-bottom">
+<footer class="bg-light text-center text-lg-start site-foote ">
   <!-- Grid container -->
   <div class="container p-4">
     <!--Grid row-->

@@ -24,6 +24,8 @@
     <tr>
       <th scope="col">ID Categoria</th>
       <th scope="col">Nome</th>
+      <th scope="col"> &nbsp<th>
+      <th scope="col"> &nbsp<th>
     </tr>
   </thead>
   <tbody>
@@ -34,6 +36,8 @@
                 echo "<tr>";
                     echo "<td> {$c->idcategoria}  </td>";
                     echo "<td> {$c->categoria}  </td>";
+                    echo "<td> <a> Excluir </a> </td>";
+                    echo "<td> <a> Alterar </a> </td>";
                 echo "</tr>";
                 
 			?>

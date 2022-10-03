@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\ClienteModel;
 class ClienteController extends Controller
 {
     /**
@@ -14,7 +14,8 @@ class ClienteController extends Controller
      */
     public function index()
     {
-        //
+        $cliente = Clientemodel::all();
+        return view('cliente',compact('cliente'));
     }
 
     /**
@@ -35,7 +36,28 @@ class ClienteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $cliente = new clienteModel();
+        $cliente -> idCliente = $request->idCliente;
+        $cliente -> nome = $request->nome;
+        $cliente -> dataNasc = $request->date;
+        $cliente -> genero = $request->genero;
+        $cliente -> estadoCivil = $request->estadoCivil;
+        $cliente -> endereco = $request->endereco;
+        $cliente -> numero = $request->numero;
+        $cliente -> complemento = $request->complemento;
+        $cliente -> cep = $request->cep;
+        $cliente -> bairro = $request->bairro;
+        $cliente -> cidade = $request->cidade;
+        $cliente -> estado = $request->estado;
+        $cliente -> cpf = $request->cpf;
+        $cliente -> rg = $request->rg;
+        $cliente -> fone = $request->fone;
+        $cliente -> celular = $request->celular;
+        $cliente -> email = $request->email;
+
+        $cliente->save();
+        return redirect("/cliente");
+
     }
 
     /**

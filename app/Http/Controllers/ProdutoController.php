@@ -38,7 +38,6 @@ class ProdutoController extends Controller
     {
         $produto = new produtoModel();
         $produto -> idproduto = $request->idproduto;
-        $produto -> idcategoria = $request->idcat;
         $produto -> produto = $request->produto;
         $produto -> valor = $request->valor;
 
