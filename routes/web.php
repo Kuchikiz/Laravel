@@ -47,3 +47,8 @@ Route::post('/pedido/inserir','PedidoController@store');
 Route::post('/produto/inserir','ProdutoController@store');
 Route::post('/cliente/inserir','ClienteController@store');
 
+Route::get('/categoria/{id}','CategoriaController@destroy');
+Route::get('/pedido/{id}','PedidoController@destroy');
+Route::get('/produto/{id}','ProdutoController@destroy');
+Route::get('/cliente/{id}','ClienteController@destroy');
+
