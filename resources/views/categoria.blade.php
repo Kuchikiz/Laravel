@@ -36,7 +36,7 @@
                 echo "<tr>";
                     echo "<td> {$c->idcategoria}  </td>";
                     echo "<td> {$c->categoria}  </td>";
-                    echo "<td> <a href='/categoria/{{$c->idcategoria}}'> Excluir </a> </td>";
+                    echo "<td> <a href='/categoria/{$c->idcategoria}'> Excluir </a> </td>";
                     echo "<td> <a> Alterar </a> </td>";
                 echo "</tr>";
                 

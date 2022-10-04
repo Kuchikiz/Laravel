@@ -50,7 +50,7 @@
                     echo "<td> {$p->idpedido}  </td>";
                     echo "<td> {$p->data}  </td>";
                     echo "<td> {$p->rastrear}  </td>";
-                    echo "<td> <a> Excluir </a> </td>";
+                    echo "<td> <a href='/pedido/{$p->idpedido}'> Excluir </a> </td>";
                     echo "<td> <a> Alterar </a> </td>";
 
                 echo "</tr>";

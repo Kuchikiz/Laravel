@@ -87,6 +87,7 @@ class PedidoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        PedidoModel::where('idpedido',$id)->delete();
+        return redirect("/pedido");
     }
 }
